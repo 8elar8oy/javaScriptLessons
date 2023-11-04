@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+</head>
+<body>
+<div id="div"></div>
+<input type="password" id="pswrd">
+<button id="btn">отправить</button>
+<script>
+    // //primitive
+    // '' - string
+    // 1 - number
+    // null - null
+    // undefined - undefined
+    // true/false - boolean
+    // symbol
+    // bigInt
+    // //object
+    // {} - object
+    // const  name = 'Петя'
+    // const  number = 1
+    // const bool = true
+    // let user = null
+    // const userName = undefined
+    // console.log(number)
+    // console.log(bool)
+    // console.log(user)
+    // console.log(userName)
+    // console.log(null==undefined)
+    // const obj = {
+    //     name: 'Петя',
+    //     age: 21
+    // };
+    // console.log(obj.name)
+    // const string = 'string'
+    // const number = 1;
+    // const bool = true;
+    // const nul = null//баг object
+    // const obj = {}
+    // const arr = [
+    //
+    // ]
+    // function foo(){
+    //
+    // }
+    // console.log(typeof foo);
+    // console.log(b)
+    // var a = 1
+    // const b =1
+    // for (let i = 0; i <9; i++){
+    //     setTimeout(() => console.log(i),0)
+    // }
+    // function foo() {
+    //     console.log('myFunction')
+    //
+    // }
+    // foo()
+    // function foo() {
+    //     console.log('myFunction')
+    //     return 2
+    // }
+    // console.log(foo())
+    // function foo(age) {
+    //     if(age >18){
+    //         return 'Вы взрослый'
+    //     }
+    //     else{
+    //         return 'Не продам'
+    //     }
+    //
+    // }
+    //
+    // console.log(foo(20))
+    const password = document.getElementById('pswrd').valueOf()
+    const div = document.getElementById('div')
+    const correctPassword = '100000'
+    function foo(password) {
+        if(password === correctPassword){
+            return 'Welcome'
+        }
+        else{
+            return 'Wrong password'
+        }
+        
+    }
+    div.innerText = foo('12456')
+</script>
+</body>
+</html>
