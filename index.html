@@ -114,6 +114,66 @@
     // console.log(word2.trim().toLowerCase() === word.trim().toLowerCase())//.trim убирает пробелы в начале и в конце
     // console.log(word.split(''))
     // console.log(word.split(' '))
+    // function getSum(a,b) {
+    //     return a+b;
+    // }
+    // console.log(getSum(5,4))
+
+    // const world = 'world'
+    // const name = 'Dima'
+    // const text = `${world} ${name}`
+    // const word = 'World'
+    // //console.log(`${hello} ${world}`)
+    // console.log(name[name.length-1])
+    // console.log(name.at(-1))
+    // console.log(name)
+    //
+    // const updateText = text.toUpperCase().trim();
+    // const updateWord = word.toUpperCase().trim();
+    // console.log(updateText.includes(updateWord))
+    //
+    // function foo() {
+    //     const updateText = text.toUpperCase().trim();
+    //     const updateWord = word.toUpperCase().trim();
+    //     return updateText.includes(updateWord)
+    // }
+    // console.log(foo())
+    // console.log(word.repeat(5))
+    // console.log(word.replace('o','D'))
+    // const data = '01.10.2032'
+    // console.log(data.replaceAll('.','/'))
+    // console.log(data.split('.').reverse().join('/'))
+    // for (let char of 'Hello'){
+    //     console.log(char)
+    // }
+    // console.log(word.slice(0,4))
+    //1
+    function ucFirst(str) {
+        if (!str) return str;
+        const capitalStr = str[0].toUpperCase()+ str.slice(1,str.length)
+        return capitalStr
+    }
+    console.log(ucFirst('вася'))
+    //2
+    function checkSpam(str) {
+        const updateStr = str.toLowerCase().trim();
+        if (updateStr.includes('viagra') || updateStr.includes('xxx')) return true
+        return false
+    }
+    console.log(checkSpam('buy ViAgRA now'))
+    console.log(checkSpam('free xxxxxx'))
+    console.log(checkSpam('innocent rabbit'))
+    //3
+    function truncate(str,maxlength) {
+        if(str.length > maxlength) return str.slice(0,maxlength-1)+'...'
+    }
+    console.log(truncate("Вот, что мне хотелось бы сказать на эту тему:", 20))
+    //4
+    const value = '$120'
+    function extractCurrencyValue(value) {
+        return value.slice(1)
+    }
+    console.log(extractCurrencyValue(value))
 </script>
 </body>
 </html>
